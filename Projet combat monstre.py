@@ -106,12 +106,14 @@ while player_health > 0 and player_nb_enemy_encountered != 10:
 if player_nb_enemy_encountered == 10 and player_health > 0:
     # exigeance pour gagner la partie
     print(f"\nVous avez gagner la partie, bravo!")
+    print(f"Vous etes enfuis {nb_escape} fois, vous avez vaincu {nb_enemy_defeated} ennemi/s et vous avez perdu {nb_defeat}fois ")
+
 
 else:
     # defaite du joueur
     nb_defeat += 1
     print(f"\nVous avez perdu la partie, bien essaye!")
-    print(f"Vous etes enfuis {nb_escape} fois, vous avez vaincu {nb_enemy_defeated} ennemi/s et vous avez perdu {nb_defeat}fois ")
+    print(f"Vous etes enfuis {nb_escape} fois, vous avez vaincu {nb_enemy_defeated} ennemi/s et vous avez perdu {nb_defeat} fois ")
 
 
 
